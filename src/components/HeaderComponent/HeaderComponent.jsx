@@ -5,7 +5,7 @@ import {
   WrapperHeaderAccount, 
   WrapperTextHeaderSmall ,
 } from './style';
-import Logo_Sakila from '../../assests/logo-sakila.png';
+import Logo_Sakila from '../../assests/Logo/logo-sakila.png';
 import Search from 'antd/es/transfer/search';
 import {
   UserOutlined,
@@ -19,10 +19,10 @@ const HeaderComponent = () => {
   return (
     <div>
       <WrapperHeader gutter={16}>
-        <Col span={4}>
+        <Col span={6}>
           <img src={Logo_Sakila} alt='Logo_Sakila'/>
         </Col>
-        <Col span={14}>
+        <Col span={12}>
           <ButtonInputSearch 
             size='large'
             bordered={false}
@@ -30,7 +30,13 @@ const HeaderComponent = () => {
             placeholder="input search text" 
           />
         </Col>
-        <Col span={6} style={{ display: 'flex', gap: '20px', alignItems: 'center'}}>
+        <Col 
+          span={6} 
+          style={{ 
+            display: 'flex', 
+            gap: '20px', 
+            alignItems: 'center', 
+            justifyContent: 'space-around'}}>
           <WrapperHeaderAccount>
             <UserOutlined style={{ fontSize:' 30px', padding: '0'}} />
             <div>
