@@ -8,6 +8,7 @@ import slider3 from '../../assests/Slider/Slider-03.jpeg'
 import slider4 from '../../assests/Slider/Slider-04.jpeg'
 import slider5 from '../../assests/Slider/Slider-05.jpeg'
 import CardComponent from '../../components/CardComponent/CardComponent';
+import NavbarComponent from '../../components/NavbarComponent/NavbarComponent';
 
 const HomePage = () => {
   const arr = [ 'TV', 'Shoe', 'Laptop']
@@ -41,6 +42,7 @@ const HomePage = () => {
           >
             <CardComponent />
           </div>
+          <NavbarComponent />
       </div>
     </>
   )
