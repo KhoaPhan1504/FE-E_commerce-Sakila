@@ -7,7 +7,6 @@ const ButtonComponent = ({ size, styleButton, styleTextButton, textButton, ...re
         size={size} 
         style={styleButton}
         {...rests }
-        // icon={<SearchOutlined style={{ color: colorButton }}/>} 
       >
         <span style={styleTextButton}>
           {textButton}
